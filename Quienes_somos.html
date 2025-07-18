@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quiénes Somos - Cafetalito</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Tipografía elegante -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --color-fondo: #f7f1ea;
+      --color-principal: #5e3c1b;
+      --color-secundario: #8d6748;
+      --color-acento: #e2c8ac;
+      --color-blanco: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background-color: var(--color-fondo);
+      color: var(--color-principal);
+    }
+
+    header {
+      background-color: var(--color-principal);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3em;
+      margin: 0;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.2em;
+      font-weight: 300;
+    }
+
+    nav {
+      background-color: var(--color-acento);
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--color-principal);
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2.5rem;
+      text-align: center;
+      color: var(--color-secundario);
+      margin-bottom: 20px;
+    }
+
+    .quienes-texto {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: var(--color-principal);
+      text-align: justify;
+    }
+
+    .quienes-imagen {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .quienes-imagen img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: var(--color-principal);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .quienes-texto {
+        font-size: 1.05rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Cafetalito</h1>
+    <p>Pasión, sabor y tradición en cada taza</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="quienes_somos.html">Quiénes Somos</a></li>
+      <li><a href="mision.html">Misión</a></li>
+      <li><a href="vision.html">Visión</a></li>
+      <li><a href="Menu.html">Menú</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>¿Quiénes Somos?</h2>
+    <p class="quienes-texto">
+      <strong>Cafetalito</strong> es una cafetería con alma guatemalteca. Nacimos del sueño de compartir el sabor auténtico del buen café,
+      cultivado con dedicación por caficultores locales y preparado con pasión en cada taza.
+      <br><br>
+      Somos un equipo de personas comprometidas con brindar experiencias acogedoras y cálidas, donde cada cliente
+      se sienta como en casa. Valoramos la conexión humana, la calidad artesanal y el respeto por nuestras raíces.
+      <br><br>
+      En Cafetalito creemos que el café no solo se toma, se vive. Por eso cada bebida es una invitación a disfrutar del momento, 
+      celebrar lo simple y crear recuerdos con aroma a café.
+    </p>
+
+    <div class="quienes-imagen">
+      <img src="img/trabajo.jpg" alt="Equipo de Cafetalito o ambiente de la cafetería">
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Cafetalito. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>

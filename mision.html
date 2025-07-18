@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Misión - Cafetalito</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Tipografías -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --color-fondo: #f7f1ea;
+      --color-principal: #5e3c1b;
+      --color-secundario: #8d6748;
+      --color-acento: #e2c8ac;
+      --color-blanco: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background-color: var(--color-fondo);
+      color: var(--color-principal);
+    }
+
+    header {
+      background-color: var(--color-principal);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3em;
+      margin: 0;
+    }
+
+    nav {
+      background-color: var(--color-acento);
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--color-principal);
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2.5rem;
+      text-align: center;
+      color: var(--color-secundario);
+      margin-bottom: 20px;
+    }
+
+    .mision-texto {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: var(--color-principal);
+      text-align: justify;
+    }
+
+    .mision-imagen {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .mision-imagen img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: var(--color-principal);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .mision-texto {
+        font-size: 1.05rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Cafetalito</h1>
+    <p>Pasión y compromiso en cada taza</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="quienes_somos.html">Quiénes Somos</a></li>
+      <li><a href="mision.html">Misión</a></li>
+      <li><a href="vision.html">Visión</a></li>
+      <li><a href="Menu.html">Menú</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Nuestra Misión</h2>
+    <p class="mision-texto">
+      En <strong>Cafetalito</strong>, nuestra misión es brindar experiencias auténticas a través del café.  
+      Nos dedicamos a ofrecer productos de alta calidad con pasión, respeto por nuestras raíces y compromiso con nuestra comunidad.
+      <br><br>
+      Buscamos cultivar momentos especiales en cada taza, conectando a las personas con sabores únicos, un ambiente acogedor 
+      y un servicio que nace del corazón.  
+      <br><br>
+      Creemos en el comercio justo, en apoyar a caficultores locales, y en promover prácticas sostenibles que beneficien a las 
+      futuras generaciones. Cada detalle cuenta, y en Cafetalito trabajamos cada día para que nuestros clientes sientan 
+      la calidez de un verdadero hogar cafetero.
+    </p>
+
+    <div class="mision-imagen">
+      <img src="img/cafesito.jpg" alt="Imagen que representa la misión de Cafetalito">
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Cafetalito. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>

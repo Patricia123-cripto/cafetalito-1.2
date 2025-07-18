@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Productos - Cafetalito</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --color-fondo: #f7f1ea;
+      --color-principal: #5e3c1b;
+      --color-secundario: #8d6748;
+      --color-acento: #e2c8ac;
+      --color-claro: #fffaf4;
+      --color-boton: #a05e2a;
+      --color-verde: #3c8a4b;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background-color: var(--color-fondo);
+      color: var(--color-principal);
+    }
+
+    header {
+      background-color: var(--color-principal);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3em;
+      margin: 0;
+    }
+
+    nav {
+      background-color: var(--color-acento);
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--color-principal);
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .contenedor-productos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .producto {
+      background: var(--color-claro);
+      border: 2px solid var(--color-acento);
+      border-radius: 12px;
+      width: 280px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .producto:hover {
+      transform: scale(1.03);
+    }
+
+    .producto img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .producto h3 {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+
+    .producto p {
+      font-weight: bold;
+      margin: 5px 0;
+    }
+
+    .producto button {
+      background-color: var(--color-boton);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+      font-size: 0.95rem;
+    }
+
+    .producto button:hover {
+      background-color: #8a4b21;
+    }
+
+    .carrito {
+      background-color: var(--color-claro);
+      border-top: 3px solid var(--color-acento);
+      padding: 30px;
+      margin-top: 40px;
+      border-radius: 12px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .carrito h2 {
+      text-align: center;
+      color: var(--color-principal);
+    }
+
+    .item-carrito {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px dashed #ccc;
+      font-size: 1rem;
+    }
+
+    .item-carrito button {
+      background: none;
+      border: none;
+      color: #d32f2f;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1.2rem;
+    }
+
+    .total {
+      margin-top: 20px;
+      text-align: right;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    #btn-pedir {
+      display: block;
+      background-color: var(--color-verde);
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 1rem;
+      margin: 20px auto 0;
+      cursor: pointer;
+    }
+
+    #btn-pedir:hover {
+      background-color: #2e6b39;
+    }
+
+    footer {
+      background-color: var(--color-principal);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .contenedor-productos {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Cafetalito</h1>
+    <p>Descubre nuestros productos</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="Quienes_somos.html">Quiénes Somos</a></li>
+      <li><a href="vision.html">Visión</a></li>
+      <li><a href="mision.html">Misión</a></li>
+      <li><a href="Menu.html">Menú</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="contenedor-productos">
+      <div class="producto">
+        <img src="img/cafeame.jpg" alt="Café Americano">
+        <h3>Café Americano</h3>
+        <p>Q25.00</p>
+        <button onclick="agregarAlCarrito('Café Americano', 25)">Agregar al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="img/cafipu.jpg" alt="Capuccino">
+        <h3>Capuccino</h3>
+        <p>Q28.00</p>
+        <button onclick="agregarAlCarrito('Capuccino', 28)">Agregar al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="img/verde.jpg" alt="Green Tea">
+        <h3>Green Tea</h3>
+        <p>Q29.00</p>
+        <button onclick="agregarAlCarrito('Green Tea', 29)">Agregar al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="img/frapee.jpg" alt="Frapee">
+        <h3>Frapee</h3>
+        <p>Q32.00</p>
+        <button onclick="agregarAlCarrito('Frapee', 32)">Agregar al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="img/lala.jpg" alt="Smoothies">
+        <h3>Smoothies</h3>
+        <p>Q35.00</p>
+        <button onclick="agregarAlCarrito('Smoothies', 35)">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <div class="carrito">
+      <h2>Tu Carrito</h2>
+      <ul id="lista-carrito"></ul>
+      <div class="total">Total: Q<span id="total">0.00</span></div>
+      <button id="btn-pedir" onclick="pedirPorWhatsApp()">Pedir por WhatsApp</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cafetalito. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    const carrito = [];
+
+    function agregarAlCarrito(nombre, precio) {
+      carrito.push({ nombre, precio });
+      mostrarCarrito();
+    }
+
+    function eliminarDelCarrito(index) {
+      carrito.splice(index, 1);
+      mostrarCarrito();
+    }
+
+    function mostrarCarrito() {
+      const lista = document.getElementById('lista-carrito');
+      const totalSpan = document.getElementById('total');
+      lista.innerHTML = '';
+      let total = 0;
+
+      carrito.forEach((producto, index) => {
+        const li = document.createElement('li');
+        li.className = "item-carrito";
+        li.innerHTML = `
+          ${producto.nombre} - Q${producto.precio}
+          <button onclick="eliminarDelCarrito(${index})">✖</button>
+        `;
+        lista.appendChild(li);
+        total += producto.precio;
+      });
+
+      totalSpan.textContent = total.toFixed(2);
+    }
+
+    function pedirPorWhatsApp() {
+      if (carrito.length === 0) {
+        alert('Tu carrito está vacío');
+        return;
+      }
+      let mensaje = 'Hola, quiero pedir lo siguiente:%0A';
+      carrito.forEach(p => {
+        mensaje += `- ${p.nombre} (Q${p.precio})%0A`;
+      });
+      const url = `https://wa.me/50239087121?text=${mensaje}`;
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cafetalito - El mejor café del oriente</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --color-fondo: #f7f1ea;
+      --color-principal: #5e3c1b;
+      --color-secundario: #8d6748;
+      --color-acento: #e2c8ac;
+      --color-blanco: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      background-color: var(--color-fondo);
+      font-family: 'Playfair Display', serif;
+      color: var(--color-principal);
+    }
+
+    header {
+      background-color: var(--color-principal);
+      color: var(--color-blanco);
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3em;
+      margin: 0;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.2em;
+      font-weight: 300;
+    }
+
+    nav {
+      background-color: var(--color-acento);
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--color-principal);
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2, h3 {
+      color: var(--color-secundario);
+    }
+
+    .bienvenida p, .destacado p {
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: var(--color-principal);
+      color: var(--color-blanco);
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    /* Estilos formulario */
+    .cuestionario {
+      background-color: var(--color-blanco);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .cuestionario h3 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+    }
+
+    .cuestionario label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    .cuestionario input,
+    .cuestionario select,
+    .cuestionario textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-family: 'Playfair Display', serif;
+      font-size: 1em;
+      transition: border-color 0.3s;
+    }
+
+    .cuestionario input:focus,
+    .cuestionario select:focus,
+    .cuestionario textarea:focus {
+      border-color: var(--color-secundario);
+      outline: none;
+    }
+
+    .cuestionario button {
+      background-color: var(--color-secundario);
+      color: white;
+      padding: 12px 20px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    .cuestionario button:hover {
+      background-color: var(--color-principal);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Cafetalito</h1>
+    <p>El mejor café del oriente</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="Quienes_somos.html">Quienes Somos</a></li>
+      <li><a href="Menu.html">Menú</a></li>
+       <li><a href="vision.html">Vision</a></li>
+        <li><a href="mision.html">Mision</a></li>
+         
+    </ul>
+  </nav>
+
+  <main>
+    <section class="bienvenida">
+      <h2>Bienvenidos a Cafetalito</h2>
+      <p>Disfruta del aroma, sabor y tradición del mejor café cultivado en el oriente del país. En Cafetalito, no solo servimos café: compartimos historias, tradición y pasión por cada grano cultivado en el corazón del oriente.</p>
+      <p>Nuestro café es cultivado por manos expertas que aman la tierra y cuidan cada detalle del proceso, desde la siembra hasta que llega a tu taza.</p>
+      <p>Ven y disfruta de un ambiente acogedor, perfecto para una charla entre amigos, una reunión de trabajo o simplemente un momento de paz con una excelente bebida.</p>
+    </section>
+
+    <section class="destacado">
+      <h3>Producto Destacado</h3>
+      <p><strong>Café Orgánico 100% Arábica</strong></p>
+      <p>Directo desde nuestras fincas en las montañas del oriente, este café ofrece un sabor suave, con notas florales y toques de chocolate que deleitan el paladar.</p>
+      <p>Está cuidadosamente seleccionado, tostado artesanalmente y molido fresco para conservar su aroma natural. Ideal para quienes buscan una experiencia de café auténtica y saludable.</p>
+      <p>Disponible en presentación molida o en grano entero, en empaques ecológicos de 250g y 500g.</p>
+      <p><em>¡Descúbrelo hoy y siente la diferencia en cada sorbo!</em></p>
+    </section>
+
+    <section class="cuestionario">
+      <h3>Cuéntanos tu experiencia</h3>
+      <form action="#" method="post">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required>
+
+        <label for="frecuencia">¿Con qué frecuencia tomas café?</label>
+        <select id="frecuencia" name="frecuencia">
+          <option value="diario">Diariamente</option>
+          <option value="semanal">Varias veces por semana</option>
+          <option value="ocasional">Ocasionalmente</option>
+          <option value="nunca">Nunca</option>
+        </select>
+
+        <label>¿Cómo prefieres tu café?</label>
+        <input type="radio" id="negro" name="tipo" value="negro" required>
+        <label for="negro">Negro</label><br>
+        <input type="radio" id="conLeche" name="tipo" value="conLeche">
+        <label for="conLeche">Con leche</label><br>
+        <input type="radio" id="helado" name="tipo" value="helado">
+        <label for="helado">Helado</label><br>
+        <input type="radio" id="otro" name="tipo" value="otro">
+        <label for="otro">Otro</label>
+
+        <label for="satisfaccion">¿Qué tan satisfecho estás con Cafetalito?</label>
+        <select id="satisfaccion" name="satisfaccion">
+          <option value="excelente">Excelente</option>
+          <option value="bueno">Bueno</option>
+          <option value="regular">Regular</option>
+          <option value="malo">Malo</option>
+        </select>
+
+        <label for="comentarios">Comentarios o sugerencias:</label>
+        <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe aquí..."></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cafetalito. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html
+
+
